@@ -1,6 +1,7 @@
 # Projet_Web
 
-participants
+# attendees
+
 -NGAMO Chabain
 -MANIFOUET Maïva
 -KANAA Albert benoit
