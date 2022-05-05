@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\CesiController;
+use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +20,49 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cesi/add', [CesiController::class, 'create']);
+Route::post('/cesi/add', [CesiController::class, 'store']);
+
+Route::get('/cesi/{id}', [CesiController::class, 'show']);
+
+Route::get('/cesi/delete/{id}', [CesiController::class, 'remove']);
+
+Route::get('/cesi/edit/{id}', [CesiController::class, 'edit']);
+Route::post('/cesi/edit/{id}', [CesiController::class, 'update']);
+
+Route::get('/cesi/sign', [CesiController::class, 'signIn']);
+Route::post('/cesi/sign', [CesiController::class, 'check']);
+
+
+Route::get('/activity/add', [ActivityController::class, 'create']);
+Route::post('/activity/add', [ActivityController::class, 'store']);
+
+Route::get('/activity/{id}', [ActivityController::class, 'show']);
+
+Route::get('/activity/delete/{id}', [ActivityController::class, 'remove']);
+
+Route::get('/activity/edit/{id}', [ActivityController::class, 'edit']);
+Route::post('/activity/edit/{id}', [ActivityController::class, 'update']);
+
+
+Route::get('/product/add', [ProductController::class, 'create']);
+Route::post('/product/add', [ProductController::class, 'store']);
+
+Route::get('/product/{id}', [ProductController::class, 'show']);
+
+Route::get('/product/delete/{id}', [ProductController::class, 'remove']);
+
+Route::get('/product/edit/{id}', [ProductController::class, 'edit']);
+Route::post('/product/edit/{id}', [ProductController::class, 'update']);
+
+
+Route::get('/category/add', [CategoryController::class, 'create']);
+Route::post('/category/add', [CategoryController::class, 'store']);
+
+Route::get('/category/{id}', [CategoryController::class, 'show']);
+
+Route::get('/category/delete/{id}', [CategoryController::class, 'remove']);
+
+Route::get('/category/edit/{id}', [CategoryController::class, 'edit']);
+Route::post('/category/edit/{id}', [ProductController::class, 'update']);
