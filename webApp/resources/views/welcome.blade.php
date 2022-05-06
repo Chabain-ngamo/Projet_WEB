@@ -68,7 +68,7 @@
     </div> 
     
     <!--script src="./Authentification.js" ></script-->
-    <link rel="stylesheet" href="{{asset('javascript/Authentification.js')}}">
+    <script src="{{ asset('javascript/Authentification.js') }}"></script>
     
 </body>
 </html> 

@@ -13,9 +13,9 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-        $Products = Product::all();
+        $Products = Product::inRandomOrder  ()->get();
 
-        return view('ProductList', ['Product' => $Products]);
+        return view('Products.index', ['Product' => $Products]);
     }
 
     /**
@@ -38,6 +38,7 @@ class ProductController extends Controller
             'name' => $request -> name,
             'description' => $request -> description,
             'price' => $request -> price
+            
         ]);
         return redirect('/');
     }

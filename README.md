@@ -15,3 +15,7 @@
 
 # mokup link
 https://app.uizard.io/prototypes/3ovoAoeYaGiwOWxb8zaP
+
+https://www.youtube.com/watch?v=ZccSHDTd5sw&list=PLeeuvNW2FHVixxKWVXqhjH1_5CPQ7nffP&index=1
+
+https://github.com/ludoguenet/ecommerce-app-laravel-6.git

@@ -48,6 +48,7 @@ Route::post('/activity/edit/{id}', [ActivityController::class, 'update']);
 
 Route::get('/product/add', [ProductController::class, 'create']);
 Route::post('/product/add', [ProductController::class, 'store']);
+Route::get('/boutique','ProductController@index')->name('products.index');
 
 Route::get('/product/{id}', [ProductController::class, 'show']);
 
@@ -66,3 +67,13 @@ Route::get('/category/delete/{id}', [CategoryController::class, 'remove']);
 
 Route::get('/category/edit/{id}', [CategoryController::class, 'edit']);
 Route::post('/category/edit/{id}', [ProductController::class, 'update']);
+
+Route::get('/cart', 'CartController@index')->name('cart.index');
+Route::post('/cart/{product}', 'CartController@store')->name('cart.store');
+Route::patch('/cart/{product}', 'CartController@update')->name('cart.update');
+Route::delete('/cart/{product}', 'CartController@destroy')->name('cart.destroy');
+Route::post('/cart/switchToSaveForLater/{product}', 'CartController@switchToSaveForLater')->name('cart.switchToSaveForLater');
+
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.index')->middleware('auth');
+Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
+Route::post('/paypal-checkout', 'CheckoutController@paypalCheckout')->name('checkout.paypal');

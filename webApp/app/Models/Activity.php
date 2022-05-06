@@ -12,10 +12,13 @@ class Activity extends Model
     public $timestamps = false;
     
     protected $fillable = [
+        'name',
         'description',
         'image',
         'dates',
-        'status'
+        'status',
+        'price',
+        'is_repeating'
     ];
     
     use HasFactory;

@@ -35,10 +35,13 @@ class ActivityController extends Controller
      */
     public function store(Request $request){
         Activity::create([
+            'name'=> $request -> name,
             'description' => $request -> description,
             'image' => $request -> image,
             'dates' => $request -> dates,
-            'status' => $request -> status
+            'status' => $request -> status,
+            'price' => $request->price,
+            'is_repeating' => $request->is_repeating
         ]);
         return redirect('/');
     }
@@ -74,15 +77,19 @@ class ActivityController extends Controller
      */
     public function update(Request $request, $id){
         $Activity = Activity::find($id);
+        $Activity -> name = $request -> name;
         $Activity -> description = $request -> description;
         $Activity -> image = $request -> image;
         $Activity -> dates = $request -> dates;
         $Activity -> status = $request -> status;
+        $Activity -> price = $request->price;
+        $Activity->is_repeating = $request->is_repeating;
+
 
         $Activity -> save();
         return redirect('/');
     } 
-
+   
     /**
      * Remove the specified resource from storage.
      *
