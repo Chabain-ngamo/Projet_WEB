@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleevenements.css">
+    <link rel="stylesheet" href="styleboiteidee.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>    
     <script src = "assets/vendors/fontawesome/js/all.js"></script> 
     <script src="./assets/vendors/jquery/jquery-3.3.1.min.js"></script>
@@ -71,44 +71,40 @@
 <body>
 
   <section>
-    
-
-    
-  </section>
-   
-
-  <section>
-       
     <div class="container">   
-      <h3>Nos évènements</h3>
-    <div class="row">
-        <div class="col-2">
-          <ol>
-
-          <div>
-          <h1>Récents</h1>
-            <li><a href="">Festival de la musique</a></li>
-            <li><a href="">TECHDAY</a></li>
-            <li><a href="">Cathofeast</a></li>  
-          </div>
-
-          <div class="oldevents">
-            <h2>Plus anciens</h2>
-            <li><a href="">Soirée de parainage</a></li>
-            <li><a href="">Soirée de bienvenue</a></li>
-            <li><a href="" >Pool party</a></li>
-          </div>
-
-        </ol>    
-            </div>
-        <div class="col-2">
-            <img src="images/calendrier.png" alt="image1">
-            </div>
+            
+        <div class="row">
+    <div class="contactez-nous">
+        <h1>Boite à idée</h1>
+        <p>Un problème, une question, une sugggestion ? N’hésitez pas et contactez-nous!</p>
+        <form action="/page-traitement-donnees" method="post">
+        <div>
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="KANAA" required>
         </div>
-    </div> 
- 
-</section>
-
-
-</body>
-</html>
+        <div>
+        <label for="email">Votre e-mail</label>
+        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+        </div>
+        <div>
+        <label for="sujet">Quel est le sujet de votre message ?</label>
+        <select name="sujet" id="sujet" required>
+        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+        <option value="probleme-compte">Problème avec mon compte</option>
+        <option value="question-produit">Question à propos d’un produit</option>
+        <option value="Suggestion">Suggestion</option>
+        <option value="autre">Autre...</option>
+        </select>
+        </div>
+        <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+        </div>
+        <div>
+        <button type="submit">Soumettre</button>
+        </div>
+        </form>
+        </div>
+    </div>
+    <div>
+  </section>
