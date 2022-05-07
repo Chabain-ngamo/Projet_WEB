@@ -11,7 +11,7 @@
     @yield('title')
   </title>
 <!-- Styles -->
-  <!-- <link rel="stylesheet" href="{{asset("css/sign.css")}}"> -->
+   <link rel="stylesheet" href="{{asset("css/sign.css")}}"> -->
   <link rel="stylesheet" href="{{asset("bootstrap/css/bootstrap-grid.min.css")}}"> -->
 
   @yield('extra-css')
@@ -22,15 +22,12 @@
     <div><h1>@yield('heading')</h1></div>
   </header>
 
-  <div><h1>@yield('heading')</h1></div>
+  
  
   <main>
     <div>@yield('content')</div>
   </main>
 
-  <footer>
-   <!-- Footer -->
-   @include('partials.footer')
-  </footer>
+ 
 </body>
 </html>
