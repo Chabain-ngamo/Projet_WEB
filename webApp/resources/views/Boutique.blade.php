@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{asset('css/styleboutique.css')}}">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>    
     <script src = "assets/vendors/fontawesome/js/all.js"></script> 
     <script src="./assets/vendors/jquery/jquery-3.3.1.min.js"></script>
     <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="{{asset('css/styleboutique.css')}}">
+    <link rel="stylesheet" href="{{asset('fontawesome/css/all.min.css')}}">
 
     <script type="text/javascript">
         window.onload = function(){
@@ -52,11 +53,11 @@
             
           </form> </li>
         <li><a href="accueil">Accueil</a></li>
-        <li><a href="Evenements.html">Evenements</a></li>
-        <li><a href="">boutique</a></li>  
-        <li><a href="">Boîte à idées</a></li>
+        <li><a href="Evenements">Evenements</a></li>
+        <li><a href="Boutique">boutique</a></li>  
+        <li><a href="boiteidée">Boîte à idées</a></li>
         <li><a href="">Contact</a></li>
-        <li><a href="#" ><i class= "fas fa-user-circle"></i></a></li>
+        <li><a href="welcome" ><i class= "fas fa-user-circle"></i></a></li>
        
     </ul>
    

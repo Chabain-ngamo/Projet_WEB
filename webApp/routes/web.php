@@ -33,6 +33,10 @@ Route::get('/accueil', function () {
     return view('accueil');
 });
 
+Route::get('/boiteidée', function () {
+    return view('boiteidée');
+});
+
 Route::get('/cesi/add', [CesiController::class, 'create']);
 Route::post('/cesi/add', [CesiController::class, 'store']);
 

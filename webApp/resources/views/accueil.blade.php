@@ -23,7 +23,7 @@
             <li><a href="">Accueil</a></li>
             <li><a href="">Evenements</a></li>
             <li><a href="Boutique">boutique</a></li>  
-            <li><a href="">Boîte à idées</a></li>
+            <li><a href="boiteidée">Boîte à idées</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="welcome" ><i class= "fas fa-user-circle"></i></a></li>
 
