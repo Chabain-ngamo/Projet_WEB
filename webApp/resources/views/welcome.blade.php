@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+@extends('template.master')
+
+@section('title', 'Sigup')
+
+@section('heading', 'SIGN UP')
+
+@section('content')
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,9 +40,10 @@
         <!-- navigation bar is finished -->
     <!-- now let us make the styling for the navigation bar -->
         </div>
+        
         <div id='login-form'class="login-page"> 
             <!-- creating the form-box -->
-            <div class="form-box"> 
+            <div class="form-box">
                 
                 <div class="button-box">
                     <div id="btn"></div>
@@ -44,6 +52,7 @@
                 </div>
                 <!-- creating the Login-form -->
                 <form method="post" id="login" class="input-group-login" > 
+                
                     <input type="text" class='input-field' placeholder="Email Id" required >
                     <input type="password" class='input-field' placeholder="Enter Password" required >
                     <input type="checkbox" class="check-box"><span>Remember Password</span>
@@ -51,12 +60,13 @@
                 </form>
                 <!-- creating the registration form -->
                 <form method="post" id="register" class="input-group-register"> 
-                    <input type="text" class='input-field' placeholder="First Name" required >
-                    <input type="text" class='input-field' placeholder="Last  Name" required >
-                    <input type="text" class='input-field' placeholder="Localisation" required >
-                    <input type="email" class='input-field' placeholder="Email Id" required >
-                    <input type="password" id="password" class='input-field'  placeholder="Enter Password" required >
-                    <input type="password" class='input-field' placeholder="Confirm Password" required >
+                @csrf
+                    <input name="firstName" type="text" class='input-field' placeholder="First Name" required>
+                    <input name="secondName" type="text" class='input-field' placeholder="Last  Name" required >
+                    <input name="centre" type="text" class='input-field' placeholder="Localisation" required >
+                    <input name="email" type="email" class='input-field' placeholder="Email Id" required >
+                    <input name="password" type="password" id="password" class='input-field'  placeholder="Enter Password" required >
+                    <input name="password" type="password" class='input-field' placeholder="Confirm Password" required >
                     <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
                     <!-- <span id="error"></span> -->
                     <small></small>

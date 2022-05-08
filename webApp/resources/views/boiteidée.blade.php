@@ -1,5 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
+
 <head>
     <link rel="icon" type="image/x-icon" href="https://www.we-ark.fr/wp-content/uploads/2020/03/cesi_logo.png">
     <meta charset="UTF-8">
@@ -78,7 +81,7 @@
     <div class="contactez-nous">
         <h1>Boite à idée</h1>
         <p>Un problème, une question, une sugggestion ? N’hésitez pas et contactez-nous!</p>
-        <form action="/page-traitement-donnees" method="post">
+        <form action="{}" method="post">
         <div>
         <label for="nom">Votre nom</label>
         <input type="text" id="nom" name="nom" placeholder="KANAA" required>
@@ -106,6 +109,11 @@
         </div>
         </form>
         </div>
+        
+    
+
     </div>
     <div>
   </section>
+    </body>
+</html>
