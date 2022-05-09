@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+    
+}
+
+
+nav{
+  background: #000000;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  flex-wrap: wrap;
+  transition: all 0.5s ease; 
+
+  
+    
+}
+
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li{
+    display: inline-block;  
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a{
+  color:rgb(255, 145, 0);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+nav img{
+  height: 100px;
+}
+
+nav img.active,nav img:hover{
+  background: none;
+}
+
+a.active,a:hover{
+  color:white
+  
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display:none;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  
+}
+@media (max-width: 952px){
+  .checkbtn{
+    display: block;
+
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #530202;
+    top: 72px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+   
+    
+  }
+  nav ul li a{
+    font-size: 20px;
+}
+
+
+
+a:hover,a.active{
+  background:none;
+color: rgb(255, 255, 255);
+}
+#check:checked ~ ul{
+  left: 0;
+}
+}
+
+ 
+
+body{
+  font-family: 'poppins', sans-serif;
+  
+}
+
+nav ul li form {
+    width: 400px;
+    margin: auto;
+    margin-top: 8px;
+    width: 100%;
+  }
+nav ul li input {
+    padding: 8px 10px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 20px;
+    
+  }
+ 
+  
+
+.navbar{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+height: 65px;
+font-family: 'Raleway', sans-serif;
+
+  
+}
+
+.container{
+    max-width: 1200px;
+    margin:20px auto;
+    padding-left: 25px; 
+    padding-right: 25px;
+    margin-top: 100px;
+}
+
+
+.container h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: -50px;
+    
+    
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;  /*pour adapter la vue quelqu'n soit l'image(si l'écran devient plus petit, le second élément part en bas) */
+    }
+
+    .col-2{
+    flex-basis: 50%;
+    padding: 20px;
+    min-width: 300px;
+    }
+    .col-2 h2{
+        color:rgb(255, 145, 0);
+        text-align: center;
+    }
+    .oldevents{
+        margin-top: 3rem ;
+    }
+    
+    
+
+.col-2 img{
+width: 100%;
+padding:30px 0;
+}
+
+
+.col-2 a{
+    display: inline-block;
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    margin-top: 25px;
+   
+}
+
+.col-2 div{
+    display: block;
+   
+}
+
+.col-2 a:hover{ /*Pour que le bouton change de couleur au curseur*/
+   color: rgb(99, 99, 99);
+}
+p{
+    color:#555
+}
+
+.header-section{
+    margin-top: -20px;
+    background: white;
+    margin-bottom: -20px;
+}
+
+
+
+
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(255, 145, 0);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+  
+  
+  
