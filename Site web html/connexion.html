@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/x-icon" href="https://www.we-ark.fr/wp-content/uploads/2020/03/cesi_logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleconnexion.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>    
+    <script src = "assets/vendors/fontawesome/js/all.js"></script> 
+    <script src="./assets/vendors/jquery/jquery-3.3.1.min.js"></script>
+
+
+    
+    
+    
+
+    <script type="text/javascript">
+        window.onload = function(){
+             let departScroll = window.pageYOffset;
+            window.onscroll = function() {
+                let currentScrollpos = window.pageYOffset;
+                console.log(departScroll + '<---->' + currentScrollpos);
+                if (departScroll > currentScrollpos) {
+                    document.getElementById("navbar").style.position = "fixed"; 
+                    document.getElementById("navbar").style.display = ""; 
+                    document.getElementById("navbar").style.transform = "";
+                }
+                else {
+                    //document.getElementById("navbar").style.display = "none";
+                    document.getElementById("navbar").style.transform = "translateY(-500px)";
+                }
+                departScroll = currentScrollpos;
+        }
+
+
+        }
+    </script>
+    
+  
+
+    <title>CESI BDE</title>
+    
+            
+    
+</head>
+<header class="navbar">
+  <nav id="navbar">
+      <a href="Accueil.html">  <img src="images/logo_cesi.png" alt="logo cesi_bde"></a>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+      </label>
+      
+      <ul>
+         
+          <li><a href="Accueil.html">Accueil</a></li>
+          <li><a href="Evenements.html">Evenements</a></li>
+          <li><a href="Boutique.html">boutique</a></li>  
+          <li><a href="boiteidee.html">Boîte à idées</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="connexion.html" ><i class= "fas fa-user-circle"></i></a></li>
+         
+      </ul>
+       
+  </nav>
+  
+  
+  </header>
+<body >
+
+
+    <section>
+       
+        <div class="container">   
+       
+        <div class="row">
+            <div class="col-2">
+             
+                <h2>Login</h2>
+
+                <form action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+                  </div>
+                
+                  <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+                
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+
+
+                </div>
+            </div>
+        </div> 
+     
+    </section>
+    
+      
+    </body>
+</html>
