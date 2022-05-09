@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,6 +23,13 @@
 </head>
 <body>
   <header>
+    
+    <?php
+    //Set session variables
+    $_SESSION["username"] = "green";
+    echo 'Session variable is set.';
+     ?>
+
     <!-- Nav -->
     <div><h1>@yield('heading')</h1></div>
   </header>

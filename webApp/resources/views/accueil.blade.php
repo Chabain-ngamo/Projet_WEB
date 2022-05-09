@@ -25,7 +25,7 @@
             <li><a href="Boutique">boutique</a></li>  
             <li><a href="boiteidée">Boîte à idées</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="welcome" ><i class= "fas fa-user-circle"></i></a></li>
+            <li><a href="student\add" ><i class= "fas fa-user-circle"></i></a></li>
 
         </ul>
     </nav>

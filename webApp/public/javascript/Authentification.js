@@ -1,5 +1,6 @@
 // The first script code is for login and registration form to move correctly 
 
+
 var x = document.getElementById('login');
 var y = document.getElementById('register');
 var z = document.getElementById('btn');
@@ -57,16 +58,16 @@ const validPassword = function(inputPassword) {
         msg = 'Le mot de passe doit contenir au moins 8 caracteres';
     }
     //au moins une maj
-    else if (!/[A-Z]/.test(inputPassword.value)) {
+    else if ('!/[A-Z]/'.test(inputPassword.value)) {
         msg = 'Le mot de passe doit contenir au moins 1 majuscule';
     }
 
     //au moins une min
-    else if (!/[a-z]/.test(inputPassword.value)) {
+    else if ('!/[a-z]/'.test(inputPassword.value)) {
         msg = 'Le mot de passe doit contenir au moins 1 minuscule';
     }
     //au moins  un chiffre
-    else if (!/[0-9]/.test(inputPassword.value)) {
+    else if ('!/[0-9]/'.test(inputPassword.value)) {
         msg = 'Le mot de passe doit contenir au moins 1 chiffre';
     }
     //mot de passe valide

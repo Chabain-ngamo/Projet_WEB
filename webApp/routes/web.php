@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\CesiController;
 use App\Http\Controllers\ideasController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\CesiController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
@@ -18,37 +19,50 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//WELCOME PAGE
 Route::get('/', function () {
     return view('accueil');
 });
-
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-
-Route::get('/Boutique', function () {
-    return view('Boutique');
-});
-
 Route::get('/accueil', function () {
     return view('accueil');
 });
 
-
-Route::get('/welcome', [CesiController::class, 'create']);
-Route::post('/welcome', [CesiController::class, 'store']);
-
-
+//IDEA BOX
 Route::get('/boiteidée', function () {
     return view('boiteidée');
 });
-
 Route::get('/boiteidée', [ideasController::class, 'create']);
 Route::post('/boiteidée', [ideasController::class, 'store']);
 
 
-/*Route::get('/cesi/add', [CesiController::class, 'create']);
-Route::post('/cesi/add', [CesiController::class, 'store']);*/
+//SHOP
+Route::get('/Boutique', function () {
+    return view('Boutique');
+});
+
+
+//STUDENT
+Route::get('/student/add', function () {
+    return view('studentSignUp');
+});
+Route::get('/student/add', [StudentController::class, 'create']);
+Route::post('/student/add', [StudentController::class, 'store']);
+
+Route::get('/student/{id}', [StudentController::class, 'show']);
+
+Route::get('/student/delete/{id}', [StudentController::class, 'remove']);
+
+Route::get('/student/edit/{id}', [StudentController::class, 'edit']);
+Route::post('/student/edit/{id}', [StudentController::class, 'update']);
+
+Route::get('/student/sign', [StudentController::class, 'signIn']);
+Route::post('/student/sign', [StudentController::class, 'check']);
+
+
+
+//CESI
+Route::get('/cesi/add', [CesiController::class, 'create']);
+Route::post('/cesi/add', [CesiController::class, 'store']);
 
 Route::get('/cesi/{id}', [CesiController::class, 'show']);
 
@@ -61,6 +75,7 @@ Route::get('/cesi/sign', [CesiController::class, 'signIn']);
 Route::post('/cesi/sign', [CesiController::class, 'check']);
 
 
+//ACTIVITY
 Route::get('/activity/add', [ActivityController::class, 'create']);
 Route::post('/activity/add', [ActivityController::class, 'store']);
 

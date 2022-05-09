@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('centre');
             $table->string('email')->unique();
             $table->string('password');
-            $table->boolean('bde');
+            $table->boolean('bde')->default('0');
         });
     }
 

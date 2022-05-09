@@ -29,3 +29,8 @@
       <button type="submit">Submit</button>
   </div>
 </form>
+
+<?php
+$_SESSION['username'] = '{{$Cesi->firstName}}'.' {{$Cesi->secondName}}';
+$_SESSION['email'] = '{{$Cesi->email}}';
+?>

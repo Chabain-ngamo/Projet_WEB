@@ -24,7 +24,7 @@ class CesiController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create(){
-        return view('welcome');
+        return view('cesiSignUp');
     }
 
     /**
