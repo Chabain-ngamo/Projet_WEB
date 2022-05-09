@@ -19,11 +19,11 @@
 
                 <div class='r1'>
                     <label for="firstname">Firstname</label>
-                    <textarea name="firstname" cols="10" rows="1">{{$Student->firstName}}</textarea>
+                    <textarea name="firstname" cols="10" rows="1">{{$Student->firstname}}</textarea>
                 </div>
                 <div class='r2'>
                     <label for="secondname">Secondname</label>
-                    <textarea name="secondname" cols="10" rows="1">{{$Student->secondName}}</textarea>
+                    <textarea name="secondname" cols="10" rows="1">{{$Student->secondname}}</textarea>
                 </div>
                 <div class='r3'>
                     <label for="centre">Centre</label>

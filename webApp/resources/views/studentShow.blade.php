@@ -17,10 +17,10 @@
         <main>
             <p></p>
             <div class='r1'>
-                <textarea  cols="10" rows="1">{{$Student->firstName}}</textarea>
+                <textarea  cols="10" rows="1">{{$Student->firstname}}</textarea>
             </div>
             <div class='r2'>
-                <textarea  cols="10" rows="1">{{$Student->secondName}}</textarea>
+                <textarea  cols="10" rows="1">{{$Student->secondname}}</textarea>
             </div>
             <div class='r3'>
                 <textarea  cols="10" rows="1">{{$Student->centre}}</textarea>
@@ -30,8 +30,8 @@
             </div>
             <br><br>
             <a href="/">Back</a>
-            <a href="/cesi/edit/{{$Student->id}}">Edit</a>
-            <a href="/cesi/delete/{{$Student->id}}">Delete</a>
+            <a href="/student/edit/{{$Student->id}}">Edit</a>
+            <a href="/student/delete/{{$Student->id}}">Delete</a>
         </main>
     </body>
 </html>

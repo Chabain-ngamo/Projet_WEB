@@ -35,10 +35,9 @@ class ideasController extends Controller
      */
     public function store(Request $request){
         Ideas::create([
-            'nom' => $request -> nom,
-            'email' => $request -> email,
             'sujet' => $request -> sujet,
-            'message' => $request -> message
+            'description' => $request -> description,
+            'image' => $request -> image
         ]);
         return redirect('/');
     }
@@ -61,11 +60,16 @@ class ideasController extends Controller
         }
     }
 
-
     public function check(Request $request, $id){
         $ideas = Ideas::find($id);
         
         echo $request -> Ideasname;
 
     } 
+
+    public function remove($id){
+        $Cesi = Ideas::find($id);
+        $Cesi -> delete();
+        return redirect('/');
+    }
 }

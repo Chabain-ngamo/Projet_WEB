@@ -85,36 +85,30 @@
         <p>Un problème, une question, une sugggestion ? N’hésitez pas et contactez-nous!</p>
         <form method="post">
         @csrf
-        <div>
-        <label for="nom">Votre nom</label>
-        <input type="text" name="nom" placeholder="KANAA" required>
-        </div>
-        <div>
-        <label for="email">Votre e-mail</label>
-        <input type="email" name="email" placeholder="monadresse@mail.com" required>
-        </div>
-        <div>
-        <label for="sujet">Quel est le sujet de votre message ?</label>
-        <select name="sujet" required>
-        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
-        <option value="probleme-compte">Problème avec mon compte</option>
-        <option value="question-produit">Question à propos d’un produit</option>
-        <option value="Suggestion">Suggestion</option>
-        <option value="autre">Autre...</option>
-        </select>
-        </div>
-        <div>
-        <label for="message">Votre message</label>
-        <textarea  name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
-        </div>
-        <div>
-        <button type="submit">Soumettre</button>
-        </div>
-        </form>
-        </div>
         
-    
-
+            <div>
+                <label for="sujet">Quel est le sujet de votre message ?</label>
+                <select name="sujet" required>
+                    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                    <option value="probleme-compte">Problème avec mon compte</option>
+                    <option value="question-produit">Question à propos d’un produit</option>
+                    <option value="Suggestion">Suggestion</option>
+                    <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Inscrivez une description</label>
+                <textarea  name="description" placeholder="Bonjour, je vous contacte car...." required></textarea>
+            </div>
+            <div>
+                <label for="image">Ajoutez une image</label>
+                <input type="file" name="image" placeholder="DRAG-n-DROP" required>
+            </div>
+            <div>
+                <button type="submit">Soumettre</button>
+            </div>
+        </form>
+        
     </div>
     <div>
   </section>

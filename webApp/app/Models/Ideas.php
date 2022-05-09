@@ -8,15 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Ideas extends Model
 {
 
-    protected $table = 'ideas';
+    protected $table = 'ideabox';
 
     public $timestamps = false;
 
     protected $fillable = [
-        'nom',
-        'email',
         'sujet',
-        'message'
+        'description',
+        'image'
     ];
 
     use HasFactory;
