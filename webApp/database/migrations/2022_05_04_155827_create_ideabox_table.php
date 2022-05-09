@@ -15,10 +15,8 @@ return new class extends Migration
     {
         Schema::create('ideabox', function (Blueprint $table) {
             $table->id();
-            $table->string('nom');
-            $table->string('email')->unique();
-            $table->string('sujet');
-            $table->string('idée');
+            $table->string('description');
+            $table->string('image');
         });
     }
 

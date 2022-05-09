@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CesiController;
+use App\Http\Controllers\ideasController;
 use App\Http\Controllers\ActivityController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
@@ -33,12 +34,17 @@ Route::get('/accueil', function () {
     return view('accueil');
 });
 
+
+Route::get('/welcome', [CesiController::class, 'create']);
+Route::post('/welcome', [CesiController::class, 'store']);
+
+
 Route::get('/boiteidée', function () {
     return view('boiteidée');
 });
 
-Route::get('/welcome', [CesiController::class, 'create']);
-Route::post('/welcome', [CesiController::class, 'store']);
+Route::get('/boiteidée', [ideasController::class, 'create']);
+Route::post('/boiteidée', [ideasController::class, 'store']);
 
 
 /*Route::get('/cesi/add', [CesiController::class, 'create']);

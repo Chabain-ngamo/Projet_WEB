@@ -1,6 +1,8 @@
 
 <!DOCTYPE html>
 <html lang="fr">
+@extends('template.master')
+
 
 
 <head>
@@ -81,18 +83,19 @@
     <div class="contactez-nous">
         <h1>Boite à idée</h1>
         <p>Un problème, une question, une sugggestion ? N’hésitez pas et contactez-nous!</p>
-        <form action="{}" method="post">
+        <form method="post">
+        @csrf
         <div>
         <label for="nom">Votre nom</label>
-        <input type="text" id="nom" name="nom" placeholder="KANAA" required>
+        <input type="text" name="nom" placeholder="KANAA" required>
         </div>
         <div>
         <label for="email">Votre e-mail</label>
-        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+        <input type="email" name="email" placeholder="monadresse@mail.com" required>
         </div>
         <div>
         <label for="sujet">Quel est le sujet de votre message ?</label>
-        <select name="sujet" id="sujet" required>
+        <select name="sujet" required>
         <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
         <option value="probleme-compte">Problème avec mon compte</option>
         <option value="question-produit">Question à propos d’un produit</option>
@@ -102,7 +105,7 @@
         </div>
         <div>
         <label for="message">Votre message</label>
-        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+        <textarea  name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
         </div>
         <div>
         <button type="submit">Soumettre</button>
