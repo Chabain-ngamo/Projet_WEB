@@ -162,6 +162,7 @@ font-family: 'Raleway', sans-serif;
     padding-left: 25px; 
     padding-right: 25px;
     margin-top: 100px;
+    font-family: 'poppins', sans-serif;
 }
 
 
@@ -169,6 +170,7 @@ font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 40px;
     margin-top: -50px;
+    
     
     
 }
@@ -191,8 +193,9 @@ font-family: 'Raleway', sans-serif;
     .col-2 h1,h2{
         color:rgb(255, 145, 0);
     }
-    .oldevents{
+    .oldevents h2{
         margin-top: 3rem ;
+        color:rgb(255, 145, 0);
     }
     
     
