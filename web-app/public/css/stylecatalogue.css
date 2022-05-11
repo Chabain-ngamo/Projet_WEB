@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+    
+}
+
+
+nav{
+  background: #000000;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  flex-wrap: wrap;
+  transition: all 0.5s ease; 
+  position:relative;z-index:10;
+
+  
+    
+}
+
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+    
+}
+
+
+nav ul li{
+    display: inline-block;  
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+#nav2 ul li{
+  margin: 0 auto;
+    text-align: center;
+
+}
+
+nav ul li a{
+  color:rgb(255, 145, 0);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+#nav2{
+background:linear-gradient(white, rgb(201, 199, 199));
+position:static;
+margin: 0 auto;
+    
+
+}
+
+#nav2 img{
+  height: 70%;
+  margin-top: 17px;
+  margin-left: 20px;
+}
+
+nav img{
+  height: 100px;
+}
+
+nav img.active,nav img:hover{
+  background: none;
+}
+
+a.active,a:hover{
+  color:white
+  
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display:none;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  #nav2 ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+ 
+
+  
+}
+@media (max-width: 952px){
+  .checkbtn{
+    display: block;
+
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #530202;
+    top: 72px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+   
+    
+  }
+  nav ul li a{
+    font-size: 20px;
+}
+
+
+
+a:hover,a.active{
+  background:none;
+color: rgb(255, 255, 255);
+}
+#check:checked ~ ul{
+  left: 0;
+}
+}
+
+ 
+
+body{
+  font-family: 'poppins', sans-serif;
+  
+}
+
+nav ul li form {
+    width: 400px;
+    margin: auto;
+    margin-top: 8px;
+    width: 100%;
+  }
+nav ul li input {
+    padding: 8px 10px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 20px;
+    
+  }
+ 
+  #nav ul li form {
+    width: 400px;
+    margin: auto;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  
+
+.navbar{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+height: 65px;
+font-family: 'Raleway', sans-serif;
+
+  
+}
+
+.container{
+    max-width: 1200px;
+    margin:20px auto;
+    padding-left: 25px; 
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;  /*pour adapter la vue quelqu'n soit l'image(si l'écran devient plus petit, le second élément part en bas) */
+    }
+
+    .col-2{
+    flex-basis: 50%;
+    padding: 20px;
+    min-width: 300px;
+    }
+
+.col-2 img{
+width: 100%;
+padding:30px 0;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px ;
+    margin: 25px 0;
+    }
+.col-2 a{
+    display: inline-block;
+    text-decoration:none;
+    padding: 10px 30px;
+    background:#db0909 ;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 25px;
+   
+}
+
+.col-2 a:hover{ /*Pour que le bouton change de couleur au curseur*/
+   background: #e47f7f;
+}
+p{
+    color:#555
+}
+
+.header-section{
+    margin-top: -20px;
+    background: radial-gradient(#fff, #eaf2fb);
+}
+
+/**Styles de la section catégories*/
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin: auto;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 2.2em;
+    color: #444;
+    margin: 50px 0;
+}
+
+/*Section des meilleurs produits*/
+
+.col-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+    transition: transform 0.4s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.col-4:hover{
+    transform: translateY(-10px)
+}
+.rating .fa{
+    color: yellow;
+}
+
+

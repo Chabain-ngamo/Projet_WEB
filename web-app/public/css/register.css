@@ -1,0 +1,11 @@
+x-auth-card {
+    color: rgb(248, 173, 11);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.register {
+    border-radius: 10%;
+}
