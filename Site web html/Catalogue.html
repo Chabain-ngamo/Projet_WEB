@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" type="image/x-icon" href="https://www.we-ark.fr/wp-content/uploads/2020/03/cesi_logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecatalogue.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="./assets/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src = "assets/vendors/fontawesome/js/all.js"></script> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    
+    
+    
+
+    <script type="text/javascript">
+        window.onload = function(){
+             let departScroll = window.pageYOffset;
+            window.onscroll = function() {
+                let currentScrollpos = window.pageYOffset;
+                console.log(departScroll + '<---->' + currentScrollpos);
+                if (departScroll > currentScrollpos) {
+                    document.getElementById("navbar").style.position = "fixed"; 
+                    document.getElementById("navbar").style.display = ""; 
+                    document.getElementById("navbar").style.transform = "";
+                }
+                else {
+                    //document.getElementById("navbar").style.display = "none";
+                    document.getElementById("navbar").style.transform = "translateY(-500px)";
+                }
+                departScroll = currentScrollpos;
+        }
+
+
+        }
+    </script>
+    
+  
+
+    <title>CESI BDE</title>
+    
+            
+    
+</head>
+<header class="navbar">
+<nav id="navbar">
+    <a href="Accueil.html">  <img src="images/logo_cesi.png" alt="logo cesi_bde"></a>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    
+    <ul>
+        
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li><a href="Evenements.html">Evenements</a></li>
+        <li><a href="Boutique.html">boutique</a></li>  
+        <li><a href="boiteidee.html">Boîte à idées</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="connexion.html" ><i class= "fas fa-user-circle"></i></a></li>
+       
+    </ul>
+   
+    
+</nav>
+
+
+</header>
+<nav id="nav2">
+    <a href="Catalogue.html">  <img src="images/Shop.png" alt="logo cesi_bde"></a>
+    
+    
+    <ul>
+       
+        <li><form> 
+            <input type="text" name="text" class="search" placeholder="Recherche...">
+            </form> </li>
+        <li><a href="" ><i class='fas fa-shopping-cart' style='font-size:24px'></i></a></li>
+       
+    </ul>
+     
+</nav>
+        
+        
+         
+   
+ 
+
+ 
+<body>
+    
+ <!--section de catégories-->
+ <section class="categories">
+    <div class="container">
+        <h2>Catégories vedettes</h2>
+    <div class="row">
+            <div class="col-3">
+        <img src="images/category-1.jpg" alt="category1">
+        </div>
+
+        <div class="col-3">
+            <img src="images/category-2.jpg" alt="category2">
+            </div>
+
+        <div class="col-3">
+            <img src="images/category-3.jpg" alt="category3">
+            </div>
+        </div>
+            
+</section>
+
+<!--Sneakers-->
+<section class="featured-products">
+    <ul id='list'>
+    <div class="container">
+        <h2>Sneakers</h2>
+        <div class="row">
+            <div class="col-4">
+               <li> <img src="images/product-1.jpg" alt="produit 1">
+                <h3>Jordan 4 </h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    
+                </div>
+                <p>200 €</p>
+            </div>
+        </li>
+
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="produit 1">
+                <h3>jack cactus</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    
+                    
+                    
+                </div>
+                <p>80 €</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="produit 1">
+                <h3>Jordan 1 blue university</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    
+                </div>
+                <p>120 €</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="produit 1">
+                <h3>Nike sb dunk low</h3>
+                 <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    
+                </div>
+                <p>20 €</p>
+            </div>
+        </div>
+         
+    </div>
+</section>
+<!--Vêtements-->
+
+<section class="featured-products">
+    <div class="container">
+        <h2>Vêtements</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg" alt="produit 1">
+                <h3>Cargo pants blue</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    
+                </div>
+                <p>30 €</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="produit 1">
+                <h3>Jogging vert</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    
+                </div>
+                <p>10 €</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="produit 1">
+                <h3>Pantalon jean</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    
+                </div>
+                <p>120 €</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="produit 1">
+                <h3>Casquette nike</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    
+                </div>
+                <p>7 €</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="produit 1">
+                <h3>hoodie Rick & Morty</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    
+                </div>
+                <p>9.99 €</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-10.jpg" alt="produit 1">
+                <h3>Hoodie Supreme</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    
+                </div>
+                <p>12 €</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-11.jpg" alt="produit 1">
+                <h3>Tshirt travis scott</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    
+                    
+                </div>
+                <p>15 €</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/product-12.jpg" alt="produit 1">
+                <h3>Tshirt oversized Alien</h3>
+
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    
+                </div>
+                <p>12.79 €</p>
+            </div>
+            
+        </div>
+         
+    </div>
+    
+</section>
+</ul>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</section>
+</body>
+</html>
