@@ -235,8 +235,20 @@ font-family: 'Raleway', sans-serif;
   text-align: center;
   padding: 10px 0;
   margin-top: 1rem;
+  cursor: pointer;
+  border: none;
  
 }
+
+.home .button1:hover{
+background: #9c9999;
+color: #000000;
+}
+
+.home .button2:hover{
+  background: #f8cc7a;
+  color: #000000;
+  }
 
 .home .button2{
   background:orange;
@@ -246,6 +258,8 @@ font-family: 'Raleway', sans-serif;
   padding: 10px 0;
   border: rgb(255, 145, 0);
   margin-top: 1rem;
+  cursor: pointer;
+  border: none;
 
 }
   
@@ -557,3 +571,5 @@ font-family: 'Raleway', sans-serif;
   align-items: center;
   flex-wrap: wrap;
 } 
+
+
