@@ -54,7 +54,7 @@
             <input type="text" name="text" class="search" placeholder="Recherche...">
             
           </form> </li>
-          <li><a href="accueil">Accueil</a></li>
+        <li><a href="accueil">Accueil</a></li>
         <li><a href="activity">Evenements</a></li>
         <li><a href="Boutique">boutique</a></li>  
         <li><a href="boiteidée">Boîte à idées</a></li>

@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-@extends('template.master')
 
     <head>
         <link rel="icon" type="image/x-icon" href="https://www.we-ark.fr/wp-content/uploads/2020/03/cesi_logo.png">
@@ -63,12 +62,12 @@
                 <ul>
             
                     <li><a href="accueil">Accueil</a></li>
-                    <li><a href="activity">Evenements</a></li>
+                    <li><a href="Evenements.html">Evenements</a></li>
                     <li><a href="Boutique">boutique</a></li>  
                     <li><a href="boiteidée">Boîte à idées</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a herf="users/add" ><i class= "fas fa-user-circle"></i></a></li>
-
+                    <li><a href="welcome" ><i class= "fas fa-user-circle"></i></a></li>
+            
                 </ul>
         
             </nav>
@@ -82,8 +81,7 @@
                     <div>
                         {{$idea->sujet}}
                         {{$idea->description}}
-                        {{$idea->image}}
-                        <img src="/storage/app/uploads/{{$idea->description}} -> getClientOriginalName()">
+                        <img src="/images/$idea->image">
                     </div>
                 @endforeach
             </div>
@@ -96,8 +94,7 @@
                     <div class="contactez-nous">
                         <h1>Boite à idée</h1>
                         <p>Un problème, une question, une sugggestion ? N’hésitez pas et contactez-nous!</p>
-
-                        <form method="post" action="/boiteidée" enctype="multipart/form-data">
+                        <form method="post" action="{{url('images/upload')}}">
                         @csrf
                         
                             <div>
@@ -122,7 +119,6 @@
                                 <button type="submit">Soumettre</button>
                             </div>
                         </form>
-
                     </div>
                 </div>
             <div>

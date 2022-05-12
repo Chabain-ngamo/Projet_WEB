@@ -15,7 +15,7 @@ class ideasController extends Controller
     public function index(){
         $ideas = Ideas::all();
 
-        return view('ideasList', ['Ideas' => $ideas]);
+        return view('boiteidée', ['ideas' => $ideas]);
     }
 
     /**
@@ -39,7 +39,12 @@ class ideasController extends Controller
             'description' => $request -> description,
             'image' => $request -> image
         ]);
-        return redirect('/');
+        $name =$request->file('image')->getClientOriginalName();
+
+        $request->file('image')->storeAs('uploads', $name);
+
+        return redirect("/boiteidée");
+        
     }
  
     /**
@@ -71,5 +76,20 @@ class ideasController extends Controller
         $Cesi = Ideas::find($id);
         $Cesi -> delete();
         return redirect('/');
+    }
+
+    
+    //Creates uploaded file
+    public function fileCreate()
+    {
+        return view('imageupload');
+    }
+
+    public function fileStore(Request $request)
+    {
+        $request->file('image')->store("uploads");
+
+        return redirect('/boiteidée');
+        
     }
 }

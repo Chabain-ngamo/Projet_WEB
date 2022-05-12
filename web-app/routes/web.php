@@ -16,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Route::get('image/upload','ideasController@fileCreate');
+Route::post('image/upload/store','ideasController@fileStore');
+Route::post('image/delete','ideasController@fileDestroy');
+
 
 //WELCOME PAGE
 Route::get('/', function () {
@@ -39,11 +43,15 @@ require __DIR__.'/auth.php';
 
 
 //IDEA BOX
-Route::get('/boiteidée', function () {
+Route::get('/boiteidée', [ideasController::class, 'index']);
+/*Route::get('/boiteidée', function () {
     return view('boiteidée');
-});
-Route::get('/boiteidée', [ideasController::class, 'create']);
+});*/
 Route::post('/boiteidée', [ideasController::class, 'store']);
+
+Route::get('/boiteidée/upload', [ideasController::class, 'fileStore']);
+Route::post('/boiteidée/upload', [ideasController::class, 'fileStore']);
+
 
 
 //SHOP
