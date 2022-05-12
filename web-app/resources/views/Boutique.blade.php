@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stle-->
     <link rel="stylesheet" href="{{asset('css/styleboutique.css')}}">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>    
-    <script src = "assets/vendors/fontawesome/js/all.js"></script> 
-    <script src="./assets/vendors/jquery/jquery-3.3.1.min.js"></script>
-    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="{{asset('fontawesome/css/all.min.css')}}">
-
+    <!--Jquery-->
+    <script src = "{{asset('jquery/jquery-3.6.0.min.js')}}"></script>    
+    <!--Fontawesome-->
+    <link rel = "stylesheet" href = "{{asset('fontawesome/css/all.css')}}">
+    <!--Bootstrap-->
+    <script src = "{{asset('bootstrap/css/bootstrap.min.css')}}"></script>    
+    
     <script type="text/javascript">
         window.onload = function(){
              let departScroll = window.pageYOffset;
@@ -41,7 +43,7 @@
 </head>
 <header class="navbar">
 <nav id="navbar">
-    <a href="">  <img src="images/logo_cesi.png" alt="logo cesi_bde"></a>
+    <a href="">  <img src="../images/logo_cesi.png" alt="logo cesi_bde"></a>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -52,13 +54,13 @@
             <input type="text" name="text" class="search" placeholder="Recherche...">
             
           </form> </li>
-        <li><a href="accueil">Accueil</a></li>
-        <li><a href="Evenements">Evenements</a></li>
+          <li><a href="accueil">Accueil</a></li>
+        <li><a href="activity">Evenements</a></li>
         <li><a href="Boutique">boutique</a></li>  
         <li><a href="boiteidée">Boîte à idées</a></li>
         <li><a href="">Contact</a></li>
-        <li><a href="welcome" ><i class= "fas fa-user-circle"></i></a></li>
-       
+        <li><a href="users/add" ><i class= "fas fa-user-circle"></i></a></li>
+
     </ul>
    
     
@@ -77,7 +79,7 @@
             <div class="col-2">
                     <h1> Bienvenue sur le site de Ventes<br>en ligne du BDE</h1>
                     <p>Une petite faim, <br>la boutique du BDE est là pour vous. </p>
-                    <a href="">Catalogue &#10141;<!--il s'agit d'un html entities qui a servit à mettre une flèche--></a>
+                    <a href="Boutique/catalogue">Catalogue &#10141;<!--il s'agit d'un html entities qui a servit à mettre une flèche--></a>
                 </div>
             <div class="col-2">
                 <img src="images/Image1.png" alt="image1">

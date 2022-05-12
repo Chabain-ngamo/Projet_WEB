@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\ideasController;
-use app\Http\Controllers\ActivityController;
-use app\Http\Controllers\ProductController;
+use App\Http\Controllers\ActivityController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
@@ -50,9 +50,15 @@ Route::post('/boiteidée', [ideasController::class, 'store']);
 Route::get('/Boutique', function () {
     return view('Boutique');
 });
+Route::get('/Boutique/catalogue', function () {
+    return view('catalogue');
+});
 
 
 //ACTIVITY
+Route::get('/activity', function () {
+    return view('activity');
+});
 Route::get('/activity/add', [ActivityController::class, 'create']);
 Route::post('/activity/add', [ActivityController::class, 'store']);
 
@@ -67,6 +73,7 @@ Route::post('/activity/edit/{id}', [ActivityController::class, 'update']);
 //PRODUCT
 Route::get('/product/add', [ProductController::class, 'create']);
 Route::post('/product/add', [ProductController::class, 'store']);
+
 Route::get('/boutique','ProductController@index')->name('products.index');
 
 Route::get('/product/{id}', [ProductController::class, 'show']);

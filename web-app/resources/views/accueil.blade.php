@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Style-->
     <link rel="stylesheet" href="{{asset('css/styleaccueil.css')}}">   
+    <!--Jquery-->
     <script src = "{{asset('jquery/jquery-3.6.0.min.js')}}"></script>    
+    <!--Fontawesome-->
     <link rel = "stylesheet" href = "{{asset('fontawesome/css/all.css')}}">
+    <!--Bootstrap-->
+    <script src = "{{asset('bootstrap/css/bootstrap.min.css')}}"></script>    
     
     <script type="text/javascript">
         window.onload = function() {
@@ -43,12 +48,12 @@
 
         <ul>
 
-            <li><a href="Accueil.html">Accueil</a></li>
-            <li><a href="Evenements.html">Evenements</a></li>
-            <li><a href="Boutique.html">boutique</a></li>
-            <li><a href="boiteidee.html">Boîte à idées</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="connexion.html"><i class= "fas fa-user-circle"></i></a></li>
+        <li><a href="accueil">Accueil</a></li>
+        <li><a href="activity">Evenements</a></li>
+        <li><a href="Boutique">boutique</a></li>  
+        <li><a href="boiteidée">Boîte à idées</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="users/add" ><i class= "fas fa-user-circle"></i></a></li>
 
         </ul>
 
