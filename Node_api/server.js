@@ -25,18 +25,18 @@ app.use(bodyParser.json());
 var Router = express.Router(); 
 
 
-Router.post('/student/login',  login);
+Router.post('/users/login',  login);
 
  //student
-Router.get('/student/centre/:centre', getStudentCentre);
+Router.get('/users/centre/:centre', okToken, getStudentCentre);
 
-Router.get('/student/:id', okToken, getStudent);
+Router.get('/users/:id', okToken, getStudent);
 
-Router.post('/student/add', okToken, createStudent);
+Router.post('/users/add',  okToken, createStudent);
 
-Router.put('/student/update/:id', okToken, updateStudent);
+Router.put('/users/update/:id', okToken, updateStudent);
 
-Router.delete('/student/delete/:id', okToken, deleteStudent);
+Router.delete('/users/delete/:id', okToken, deleteStudent);
 
 //product
 
@@ -60,9 +60,9 @@ Router.delete('/activity/delete/:id', okToken, deleteActivity);
 
 //ideas
 
-Router.get('/ideabox/:id', okToken, getIdeas);
+Router.get('/ideabox/:id', getIdeas);
 
-Router.post('/ideabox/add', okToken, createIdeas);
+Router.post('/ideabox/add', createIdeas);
 
 Router.put('/ideabox/update/:id', okToken, updateIdeas);
 

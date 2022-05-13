@@ -6,14 +6,14 @@ module.exports = {
 	
   createStudent : (data, callBack) => {
     pool.query (
-      " INSERT INTO student (firstname, secondname, centre, email, password, bde) VALUES (?, ?, ?, ?, ?, ?)",
+      " INSERT INTO users (firstname, secondname, centre, email, password, role) VALUES (?, ?, ?, ?, ?, ?)",
       [
         		data.firstname,
 				data.secondname,
 				data.centre,
 				data.email,
 				data.password,
-				0
+				"student"
 
       ],
 			(error, results, fields) => {
@@ -30,7 +30,7 @@ module.exports = {
 	// getstudent by id
 	getStudent : (id, callBack) => {
 		pool.query(
-			"SELECT * FROM student WHERE id = ?",
+			"SELECT * FROM users WHERE id = ?",
 			[id],
 			(error, results, fields) => {
 				if (error) {
@@ -44,7 +44,7 @@ module.exports = {
 	// getStudentCentre
 	getStudentCentre : (centre, callBack) => {
 		pool.query(
-			"SELECT * FROM student WHERE centre = ?",
+			"SELECT * FROM users WHERE centre = ?",
 			[centre],
 			(error, results, fields) => {
 				if (error) {
@@ -58,7 +58,7 @@ module.exports = {
 	// UpdateStudent
 	updateStudent : (id, data, callBack) => {
 		pool.query(
-			"UPDATE student set firstname=?, secondname=?, centre=?, email=?, password=? WHERE id = ?",
+			"UPDATE users set firstname=?, secondname=?, centre=?, email=?, password=? WHERE id = ?",
 			[
 				data.firstname,
 				data.secondname,
@@ -79,7 +79,7 @@ module.exports = {
 	// DeleteStudent
 	deleteStudent : (id, callBack) => {
 		pool.query(
-			"DELETE FROM student WHERE id = ?",
+			"DELETE FROM users WHERE id = ?",
 			[id],
 			(error, results, fields) => {
 				if (error) {

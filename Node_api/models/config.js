@@ -6,7 +6,7 @@ module.exports = {
 	
 	create : (data, callBack) => {
     pool.query (
-      " INSERT INTO student (email, password) VALUES (?, ?)",
+      " INSERT INTO users (email, password) VALUES (?, ?)",
       [
 				data.email,
 				data.password
@@ -25,7 +25,7 @@ module.exports = {
 	
   getEmail : (email, callBack) => {
 		pool.query(
-			"SELECT * FROM student WHERE email = ?",
+			"SELECT * FROM users WHERE email = ?",
 			[email],
 			(error, results, fields) => {
 				if (error) {
