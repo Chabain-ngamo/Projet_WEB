@@ -7,7 +7,7 @@ session_start();
     
     <x-auth-card>
         <x-slot name="logo" class='form'>
-            <img src="{{asset('images/logo_cesi.png')}}" height="500" width="350"/>
+            <img src="{{asset('images/img_avatar2.png')}}" height="100" width="200"/>
         </x-slot>
 
         <!-- Validation Errors -->
@@ -79,6 +79,6 @@ session_start();
                 </x-button>
             </div>
         </form>
-    </x-auth-card>
+    </x-auth-card >
 </x-guest-layout>
 

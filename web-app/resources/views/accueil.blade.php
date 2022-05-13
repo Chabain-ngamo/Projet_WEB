@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/x-icon" href="https://www.we-ark.fr/wp-content/uploads/2020/03/cesi_logo.png">
+<link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
 
 <header class="navbar">
     <nav id="navbar">
-        <a href="Accueil.html"> <img src="images/logo_cesi.png" alt="logo cesi_bde"></a>
+        <a href="accueil"> <img src="images/logo_cesi.png" alt="logo cesi_bde"></a>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -48,10 +48,10 @@
 
         <ul>
 
-        <li><a href="accueil">Accueil</a></li>
-        <li><a href="activity">Evenements</a></li>
-        <li><a href="Boutique">boutique</a></li>  
-        <li><a href="boiteidée">Boîte à idées</a></li>
+        <li><a href="accueil">home</a></li>
+        <li><a href="activity">Events</a></li>
+        <li><a href="Boutique">Shop</a></li>  
+        <li><a href="boiteidée">Idea box</a></li>
         <li><a href="">Contact</a></li>
         <li><a href="users/add" ><i class= "fas fa-user-circle"></i></a></li>
 
@@ -69,8 +69,8 @@
                 <p class="home-desc">
                     The platform dedicated to the development of students
                 </p>
-                <a href=""><button class="btn button1">READ MORE</button></a>
-                <a href=""> <button class="btn button2">LOGIN</button></a>
+                <a href="#middle"><button class="btn button1">READ MORE</button></a>
+                <a href="users/add"> <button class="btn button2">LOGIN</button></a>
             </div>
         </div>
     </div>
@@ -81,7 +81,7 @@
 
     <section class="cards-wrapper">
         <div class="card-grid-space">
-            <div class="num">Events</div>
+            <div class="num" id="middle">Events</div>
             <a class="card" href="Evenements.html" style="--bg-img: url(../images/festi.jpg)">
                 <div>
                     <h1>Festi fury</h1>
@@ -124,7 +124,7 @@
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                 </div>
                 <div class="content">
-                    <img src="https://images.pexels.com/photos/2570145/pexels-photo-2570145.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+                    <img src="./images/chabain.png" alt="">
                     <strong>NGAMO Chabain </strong>
                     <p>LEADER</p>
                 </div>
@@ -141,7 +141,7 @@
                     </div>
                 </div>
                 <div class="content">
-                    <img src=https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 alt="">
+                    <img src=./images/maiva.png alt="">
                     <strong>MAGNIFOUET Maiva</strong>
                     <p>...</p>
                 </div>
@@ -153,7 +153,7 @@
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                 </div>
                 <div class="content">
-                    <img src=https://images.pexels.com/photos/3681591/pexels-photo-3681591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 alt="">
+                    <img src=./images/jordan.png alt="">
                     <strong>TCHOUNGA Jordan</strong>
                     <p>...</p>
                 </div>
@@ -165,7 +165,7 @@
                     <i class="fa fa-check-circle" aria-hidden="true"></i>
                 </div>
                 <div class="content">
-                    <img src=https://images.pexels.com/photos/1689731/pexels-photo-1689731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 alt="">
+                    <img src=./images/Albert.png alt="">
                     <strong>KANAA Albert</strong>
                     <p>...</p>
                 </div>

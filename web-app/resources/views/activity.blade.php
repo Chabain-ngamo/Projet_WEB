@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/x-icon" href="https://www.we-ark.fr/wp-content/uploads/2020/03/cesi_logo.png">
+<link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
 
 <header class="navbar">
     <nav id="navbar">
-        <a href="Accueil.html"> <img src="../images/logo_cesi.png" alt="logo cesi_bde"></a>
+        <a href="accueil"> <img src="../images/logo_cesi.png" alt="logo cesi_bde"></a>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -48,10 +48,10 @@
 
         <ul>
 
-        <li><a href="accueil">Accueil</a></li>
-        <li><a href="activity">Evenements</a></li>
-        <li><a href="Boutique">boutique</a></li>  
-        <li><a href="boiteidée">Boîte à idées</a></li>
+        <li><a href="accueil">Home</a></li>
+        <li><a href="activity">Events</a></li>
+        <li><a href="Boutique">Shop</a></li>  
+        <li><a href="boiteidée">Idea box</a></li>
         <li><a href="">Contact</a></li>
         <li><a href="users/add" ><i class= "fas fa-user-circle"></i></a></li>
 
@@ -117,22 +117,22 @@
 <section>
        
   <div class="container">   
-    <h3>Nos évènements</h3>
+    <h3>OUR EVENTS</h3>
   <div class="row">
       <div class="col-2">
         <ol>
 
         <div>
-        <h1>Récents</h1>
-          <li><a href="">Festival de la musique</a></li>
+        <h1>Recents</h1>
+          <li><a href="">VR NIGHT</a></li>
           <li><a href="">TECHDAY</a></li>
           <li><a href="">Cathofeast</a></li>  
         </div>
 
         <div class="oldevents">
-          <h2>Plus anciens</h2>
-          <li><a href="">Soirée de parainage</a></li>
-          <li><a href="">Soirée de bienvenue</a></li>
+          <h2>Olds</h2>
+          <li><a href="">Laser game</a></li>
+          <li><a href="">Chess </a></li>
           <li><a href="">Pool party</a></li>
         </div>
 

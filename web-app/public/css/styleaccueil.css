@@ -200,24 +200,40 @@ nav ul li input {
     font-size: 19px;
 }
 
-.home .button1 {
+.home .button1{
     background: #000000;
     color: white;
     width: 150px;
     text-align: center;
     padding: 10px 0;
     margin-top: 1rem;
-}
+    cursor: pointer;
+    border: none;
+   
+  }
+  
+  .home .button1:hover{
+  background: #9c9999;
+  color: #000000;
+  }
 
-.home .button2 {
-    background: orange;
+  .home .button2:hover{
+    background: #f8cc7a;
+    color: #000000;
+    }
+  
+  .home .button2{
+    background:orange;
     color: white;
     width: 150px;
     text-align: center;
     padding: 10px 0;
     border: rgb(255, 145, 0);
     margin-top: 1rem;
-}
+    cursor: pointer;
+    border: none;
+  
+  }
 
 @media (max-width: 575px) {
     .home .button2 {

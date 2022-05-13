@@ -3,7 +3,7 @@
 <html lang="fr">
 
     <head>
-        <link rel="icon" type="image/x-icon" href="https://www.we-ark.fr/wp-content/uploads/2020/03/cesi_logo.png">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +53,7 @@
     
         <header class="navbar">
             <nav id="navbar">
-                <a href="">  <img src="images/logo_cesi.png" alt="logo cesi_bde"></a>
+                <a href="accueil">  <img src="images/logo_cesi.png" alt="logo cesi_bde"></a>
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fas fa-bars"></i>
@@ -61,10 +61,10 @@
         
                 <ul>
             
-                    <li><a href="accueil">Accueil</a></li>
-                    <li><a href="Evenements.html">Evenements</a></li>
-                    <li><a href="Boutique">boutique</a></li>  
-                    <li><a href="boiteidée">Boîte à idées</a></li>
+                    <li><a href="accueil">Home</a></li>
+                    <li><a href="Evenements.html">Events</a></li>
+                    <li><a href="Boutique">Shop</a></li>  
+                    <li><a href="boiteidée">Idea box</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="welcome" ><i class= "fas fa-user-circle"></i></a></li>
             
@@ -92,31 +92,31 @@
                     
                 <div class="row">
                     <div class="contactez-nous">
-                        <h1>Boite à idée</h1>
-                        <p>Un problème, une question, une sugggestion ? N’hésitez pas et contactez-nous!</p>
+                        <h1>Idea box</h1>
+                        <p>Do you have a problem?an idea?a propose?contact us!</p>
                         <form method="post" action="{{url('images/upload')}}">
                         @csrf
                         
                             <div>
-                                <label for="sujet">Quel est le sujet de votre message ?</label>
+                                <label for="sujet">why are you writing?</label>
                                 <select name="sujet" required>
-                                    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
-                                    <option value="probleme-compte">Problème avec mon compte</option>
-                                    <option value="question-produit">Question à propos d’un produit</option>
-                                    <option value="Suggestion">Suggestion</option>
-                                    <option value="autre">Autre...</option>
+                                    <option value="" disabled selected hidden>choose the goal </option>
+                                    <option value="probleme-compte">A problem with your account?</option>
+                                    <option value="question-produit">Question about a product?</option>
+                                    <option value="Suggestion">Suggestion?</option>
+                                    <option value="autre">Other...</option>
                                 </select>
                             </div>
                             <div>
-                                <label for="description">Inscrivez une description</label>
+                                <label for="description">insert description</label>
                                 <textarea  name="description" placeholder="Bonjour, je vous contacte car...." required></textarea>
                             </div>
                             <div>
-                                <label for="image">Ajoutez une image</label>
+                                <label for="image">add picture</label>
                                 <input type="file" name="image" placeholder="DRAG-n-DROP" >
                             </div>
                             <div>
-                                <button type="submit">Soumettre</button>
+                                <button type="submit">Submit</button>
                             </div>
                         </form>
                     </div>

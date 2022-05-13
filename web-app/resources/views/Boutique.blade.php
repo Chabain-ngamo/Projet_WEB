@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/x-icon" href="https://www.we-ark.fr/wp-content/uploads/2020/03/cesi_logo.png">
+<link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
 </head>
 <header class="navbar">
 <nav id="navbar">
-    <a href="">  <img src="../images/logo_cesi.png" alt="logo cesi_bde"></a>
+    <a href="accueil">  <img src="../images/logo_cesi.png" alt="logo cesi_bde"></a>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -54,10 +54,10 @@
             <input type="text" name="text" class="search" placeholder="Recherche...">
             
           </form> </li>
-        <li><a href="accueil">Accueil</a></li>
-        <li><a href="activity">Evenements</a></li>
-        <li><a href="Boutique">boutique</a></li>  
-        <li><a href="boiteidée">Boîte à idées</a></li>
+        <li><a href="accueil">Home</a></li>
+        <li><a href="activity">Events</a></li>
+        <li><a href="Boutique">Shop</a></li>  
+        <li><a href="boiteidée">Idea box</a></li>
         <li><a href="">Contact</a></li>
         <li><a href="users/add" ><i class= "fas fa-user-circle"></i></a></li>
 
@@ -77,9 +77,9 @@
             
         <div class="row">
             <div class="col-2">
-                    <h1> Bienvenue sur le site de Ventes<br>en ligne du BDE</h1>
-                    <p>Une petite faim, <br>la boutique du BDE est là pour vous. </p>
-                    <a href="Boutique/catalogue">Catalogue &#10141;<!--il s'agit d'un html entities qui a servit à mettre une flèche--></a>
+                    <h1> Welcome to the shop of CESI BDE</h1>
+                    <p>Lets promote our school </p>
+                    <a href="Boutique/catalogue">Catalog &#10141;<!--il s'agit d'un html entities qui a servit à mettre une flèche--></a>
                 </div>
             <div class="col-2">
                 <img src="images/Image1.png" alt="image1">

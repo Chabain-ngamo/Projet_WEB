@@ -1,10 +1,11 @@
 @extends('template.master')
 
+<link rel="stylesheet" href="{{asset('css/login.css')}}">
 
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-        <img src="{{asset('images/logo_cesi.png')}}" height="500" width="350"/>
+        <img src="{{asset('images/img_avatar2.png')}}" height="100" width="200"/>
         </x-slot>
 
         <!-- Session Status -->
